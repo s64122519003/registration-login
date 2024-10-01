@@ -7,16 +7,16 @@ function handleRequest($endpoint, $input) {
     // Map API endpoints to specific files
     switch ($endpoint) {
         case 'login':
-            $url = 'http://localhost/login/login.php';  // Adjust to your server path
+            $url = 'http://localhost/login/login_secured.php';  // Adjust to your server path
             break;
         case 'register':
-            $url = 'http://localhost/login/register.php';
+            $url = 'http://localhost/login/register_secured.php';
             break;
         case 'reset':
-            $url = 'http://localhost/login/reset.php';
+            $url = 'http://localhost/login/reset_secured.php';
             break;
         case 'delete':
-            $url = 'http://localhost/login/delete.php';
+            $url = 'http://localhost/login/delete_secured.php';
             break;
         default:
             echo json_encode(['message' => 'Invalid endpoint']);
